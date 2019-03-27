@@ -3,9 +3,14 @@ $module:			'l';
 
 .#{$module} {
 
+	&-main {
+		margin: 10px;
+		border: 1px solid $colorText;
+	}
+
 	&-section {
 		display: flex;
-		height: 100vh;
+		height: calc(100vh - 20px);
 	}
 
 	&-half {

@@ -17,7 +17,7 @@ $module: 			'counter';
 	border: em(10) solid $colorSecondary;
 	// mix-blend-mode: multply;
 
-	&:after {
+	&:before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -29,9 +29,5 @@ $module: 			'counter';
 		border-radius: 50%;
 		border: 1px solid $colorPrimary;
 		z-index: -1;
-	}
-
-	&-position {
-		display: block;
 	}
 }	

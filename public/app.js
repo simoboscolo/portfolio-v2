@@ -96,13 +96,25 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  created: function created() {
+    window.addEventListener('keyup', this.keyEvent);
+  },
   data: function data() {
     return {
       step: 1
     };
   },
   computed: {},
-  methods: {}
+  methods: {
+    nextStep: function nextStep(event) {
+      this.step += 1;
+    },
+    keyEvent: function keyEvent(event) {
+      if (event.code == 'Space') {
+        this.nextStep();
+      }
+    }
+  }
 });
 
 /***/ }),

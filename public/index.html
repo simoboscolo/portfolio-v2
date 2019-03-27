@@ -9,11 +9,12 @@
 </head>
 <body>
 
-	<div id="app">
+	<main class="l-main" id="app">
 		
 		<main-container inline-template>
-			<div class="l-section" @click="step += 1">
+			<div class="l-section">
 				<div class="counter"> {{ step }} </div>
+
 				<template  v-if="step === 1">
 					<div class="l-half">
 						<h1 class="alpha">hello there</h1>
@@ -22,6 +23,7 @@
 						<h1 class="alpha">hello there again</h1>
 					</div>
 				</template>
+
 				<template  v-if="step === 2">
 						<div class="l-half">
 							<h1 class="alpha">hello there step 2</h1>
@@ -30,10 +32,11 @@
 							<h1 class="alpha">hello there again step 2</h1>
 						</div>
 				</template>
+
 			</div>
 		</main-container>
 
-	</div>
+	</main>
 
 	<script src="/app.js" type="text/javascript"></script>
 	
