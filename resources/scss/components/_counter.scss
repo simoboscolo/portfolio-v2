@@ -1,0 +1,37 @@
+$module: 			'counter';
+
+
+.#{$module} {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: em(95);
+	width: em(95);
+	background-color: $colorSecondary;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(-50%,-50%);
+
+	border: em(10) solid $colorSecondary;
+	// mix-blend-mode: multply;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: em(75);
+		height: em(75);
+		display: block;
+		background-color: $colorSecondary;
+		border-radius: 50%;
+		border: 1px solid $colorPrimary;
+		z-index: -1;
+	}
+
+	&-position {
+		display: block;
+	}
+}	

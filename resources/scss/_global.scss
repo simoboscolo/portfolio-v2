@@ -1,0 +1,43 @@
+*{
+	box-sizing: inherit; // IE8 Compatabile (doesnt work with max-width,min width however careful)
+	&:after,
+	&:before{
+		box-sizing: inherit;
+	}
+}
+
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: $ffBase;
+	@include font-size($fzBase);
+	line-height: ($lhBase/$fzBase);
+	color: $colorText;
+	background-color: $colorBody;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Headings
+// -------------------------
+
+h1,h2,h3,h4,h5 {
+	line-height: normal;
+	font-weight: normal;
+}
+
+@for $i from 1 through length($headings) {
+	.rteCopy h#{$i},#{nth($headings,$i)} {
+		@include font-size(nth($headingSizes,$i));
+		font-family: #{nth($headingFamilies,$i)};
+		color: #{nth($headingColors,$i)};
+		line-height: (nth($headingLineHeights,$i)/nth($headingSizes,$i));
+		margin-bottom: em(nth($headingMargins,$i),nth($headingSizes,$i));
+		font-weight: #{nth($headingWeight,$i)};
+		text-transform: #{nth($headingTransform,$i)};
+	}
+}

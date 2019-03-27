@@ -1,0 +1,21 @@
+$module:			'l';
+
+
+.#{$module} {
+
+	&-section {
+		display: flex;
+		height: 100vh;
+	}
+
+	&-half {
+		flex: 1 0 50%;
+		padding: em(75);
+	}
+
+	&-half:nth-of-type(odd) {
+		border-left: 1px solid $colorText;
+		// background-color: $colorText;
+		// color: $colorSecondary;
+	}
+}

@@ -1,0 +1,42 @@
+// Typography
+// -------------------------
+	
+	// Family
+	$ffBase: 			'Roboto Condensed',sans-serif;;
+	$ffSecondary: 		'Lora',serif;
+	$ffHeadings: 		$ffSecondary;
+	$ffCopy: 			$ffBase;
+
+	// Style
+	$fzBase: 					18 !default;
+	$fzSmall: 					14;
+	$fzMob: 					14;
+	$lhBase: 					26 !default;
+
+// Colors
+// -------------------------
+
+	$color1:					#0f0f0f;			// Primary - Dark Grey
+	$color2: 					#f6f6f5;			// Secondary - Off-white
+	
+	// Color roles
+
+	$colorPrimary: 				$color1;
+	$colorSecondary: 			$color2;
+	$colorText: 				$color1;
+	$colorBody: 				$color2;
+
+// Transitions
+// -------------------------
+
+// Headings
+// -------------------------
+
+	$headings: 							'.alpha','.beta','.gamma','.delta';
+	$headingSizes: 						75,30,22,16;
+	$headingFamilies: 					$ffHeadings, $ffHeadings, $ffHeadings, $ffBase;
+	$headingColors: 					inherit, inherit, inherit, inherit;
+	$headingTransform: 					none, none, none, none; 
+	$headingWeight: 					800, 800, 800, 900;
+	$headingMargins: 					10,10, 5, 0;
+	$headingLineHeights: 				39, 39, 26, 16;

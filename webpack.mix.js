@@ -8,6 +8,6 @@ mix.js(`resources/js/app.js`, `public/app.js`).sass(`resources/scss/main.scss`, 
 
 mix.browserSync({
 	proxy: '',
-	server: 'public/views',
+	server: 'public',
 	files: ['public/**/**/*'],
 });
