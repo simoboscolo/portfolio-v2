@@ -1,0 +1,48 @@
+body {
+	background: radial-gradient(ellipse at bottom, #001e38, $colorPrimary);
+}
+
+.l-main {
+	padding: 15vh 10vw 10vh;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+a {
+	color: $colorText;
+
+	&:hover {
+		background: $colorText;
+		color: $colorPrimary;
+		text-decoration: none;
+	}
+}
+
+p {
+	font-family: $ffSecondary;
+	margin-bottom: 2vh;
+	max-width: em(750);
+}
+
+.header {
+	font-family: $ffSecondary;
+	font-weight: 800;
+	font-size: 8vw;
+	margin-bottom: 10vh;
+	line-height: 1;
+}
+
+.header__sub {
+	font-family: $ffSecondary;
+	font-weight: 800;
+	font-size: 4vw;
+	margin-bottom: 1vh;
+	line-height: 1;
+}
+
+.footer {
+	padding: 5vh 0 10vh;
+	font-size: em(14);
+}

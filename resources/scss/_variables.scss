@@ -23,8 +23,8 @@
 
 	$colorPrimary: 				$color1;
 	$colorSecondary: 			$color2;
-	$colorText: 				$color1;
-	$colorBody: 				$color2;
+	$colorText: 				$color2;
+	$colorBody: 				$color1;
 
 // Transitions
 // -------------------------
@@ -33,10 +33,10 @@
 // -------------------------
 
 	$headings: 							'.alpha','.beta','.gamma','.delta';
-	$headingSizes: 						75,30,22,16;
+	$headingSizes: 						100,30,22,16;
 	$headingFamilies: 					$ffHeadings, $ffHeadings, $ffHeadings, $ffBase;
 	$headingColors: 					inherit, inherit, inherit, inherit;
 	$headingTransform: 					none, none, none, none; 
 	$headingWeight: 					800, 800, 800, 900;
-	$headingMargins: 					10,10, 5, 0;
-	$headingLineHeights: 				75, 30, 22, 16;
+	$headingMargins: 					0, 0, 0, 0;
+	$headingLineHeights: 				85, 30, 22, 16;
